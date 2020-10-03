@@ -3,15 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quizzes">
+    <meta name="keywords" content="quiz,quizzes, quiz game, асуулт">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <!-- ------------------header begin ----------------------- -->
     <header>
-        <div>
+        <div id="nav-left">
             <h1>Quiz</h1>
             <div id="search">
                 <form>
@@ -20,8 +23,8 @@
                 </form>
             </div>
         </div>
-        <div>
-            <nav>
+        <div id="nav-right">
+            <nav class="nav_links">
                 <ul>
                     <li><a href="#home-page">Нүүр хуудас</a></li>
                     <li><a href="#about">Бидний тухай</a></li>
@@ -31,10 +34,83 @@
             <button>Нэвтрэх</button>
         </div>
     </header>
-    <section id="home-page"></section>
-    <section id="play"></section>
-    <section id="about"></section>
+    <!-- ------------------header end ----------------------- -->
+
+    <main>
+        <!-- ------------------home page begin ----------------------- -->
+
+        <section id="home-page">
+            <section id="home">
+                <div>
+                    <h1>Намайг таа</h1>
+                    <h4>
+                        Өөрийгөө сорьж цагийг үр бүтээлтэй өнгөрүүлээрэй
+                    </h4>
+                    <button><a href="#play">Тоглох</a></button>
+                </div>
+                <div>
+                    <img src="./photos/thinkwoman.jpg" alt="read book girl">
+                </div>
+            </section>
+            <section id="desc-page">
+                <header>
+                    <h1>Шалгалтандаа бэлдэж, цагийг хөгжилтэй өнгөрүүлмээр байна уу.</h1>
+                </header>
+                <div class="container">
+                    <div class="card">
+                        <img src="./photos/task.jpg" alt="Avatar">
+                        <div class="container">
+                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
+                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./photos/studygirlcartoon.png" alt="Avatar">
+                        <div class="container">
+                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
+                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./photos/task2.png" alt="Avatar">
+                        <div class="container">
+                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
+                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </section>
+
+        <!-- ------------------home page end ----------------------- -->
+
+        <!-- ------------------play game begin ----------------------- -->
+        <section id="play">
+            <div class="container">
+                <div class="box"><a href="#">Математик</a></div>
+                <div class="box"><a href="#">Дуу хөгжим</a></div>
+                <div class="box"><a href="#">Уран зохиол</a></div>
+                <div class="box"><a href="#">Компьютер</a></div>
+                <div class="box"><a href="#">Алгоритм</a></div>
+                <div class="box"><a href="#">Шинжлэх ухаан</a></div>
+            </div>
+        </section>
+
+
+        <!-- ------------------play game end ----------------------- -->
+
+        <!-- ------------------about begin ----------------------- -->
+        <section id="about"></section>
+
+        <!-- ------------------about end ----------------------- -->
+    </main>
+
+    <!-- ------------------footer begin ----------------------- -->
     <section id="contact"></section>
+
+    <!-- ------------------footer end ----------------------- -->
 </body>
 
 </html>

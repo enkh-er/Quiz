@@ -1,3 +1,149 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    box-sizing: border-box;
     margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
+
+
+/*-----------------------header begin----------------------*/
+
+li,
+a,
+button {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 5%;
+}
+
+#nav-left,
+#nav-right {
+    display: flex;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+#search {
+    padding-left: 10px;
+}
+
+
+/*-----------------------header end  -----------------------*/
+
+
+/*-----------------------home page begin----------------------*/
+
+#home {
+    display: flex;
+    margin: 30px;
+}
+
+#home img {}
+
+#desc-page {
+    margin: 30px;
+    padding: 10px;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.card {
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#desc-page .card img {
+    width: 80%;
+    height: 30vh;
+}
+
+@media screen and (max-width:1200px) {
+    .card {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .card {
+        width: 90%;
+    }
+}
+
+
+/*-----------------------home page end----------------------*/
+
+
+/*-----------------------play game begin----------------------*/
+
+#play {
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.box {
+    width: 30%;
+    height: 100px;
+    margin: 20px;
+    box-sizing: border-box;
+    background-color: rgb(228, 161, 192);
+}
+
+.box a {
+    text-decoration: none;
+    font-size: 40px;
+}
+
+
+/* add responsive media quaries */
+
+@media screen and (max-width:1200px) {
+    .box {
+        width: 40%;
+    }
+    .box a {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .box {
+        width: 90%;
+    }
+    .box a {
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
+
+
+/*-----------------------play game end----------------------*/
