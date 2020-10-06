@@ -112,7 +112,7 @@ header {
 
 .box {
     width: 30%;
-    height: 100px;
+    height: 150px;
     margin: 20px;
     box-sizing: border-box;
     background-color: rgb(228, 161, 192);
@@ -120,7 +120,7 @@ header {
 
 .box a {
     text-decoration: none;
-    font-size: 40px;
+    font-size: 30px;
 }
 
 
