@@ -7,176 +7,223 @@
     <meta name="description" content="quizzes">
     <meta name="keywords" content="quiz,quizzes, quiz game, асуулт">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>quiz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- ------------------header begin ----------------------- -->
-    <header>
-        <div id="nav-left">
-            <h1>Quiz</h1>
-            <div id="search">
-                <form>
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                    <input type="text" placeholder="Search.." name="search">
-                </form>
-            </div>
-        </div>
-        <div id="nav-right">
-            <nav class="nav_links">
-                <ul>
-                    <li><a href="#home-page">Нүүр хуудас</a></li>
-                    <li><a href="#about">Бидний тухай</a></li>
-                    <li><a href="#contact">Холбоо барих</a></li>
-                </ul>
-            </nav>
-            <button>Нэвтрэх</button>
-        </div>
+    <header class="navHeader">
+        <img src="./photos/logo1.svg" alt="logo" class="logo">
+        <nav>
+            <input id="nav-toggle" type="checkbox">
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+            <ul class="links">
+                <li><a href="#home-page">Нүүр хуудас</a></li>
+                <li><a href="#play">Тоглох</a></li>
+                <li><a href="#about">Бидний тухай</a></li>
+                <li><a href="#contact">Холбоо барих</a></li>
+                <li><a href="#"><button type="submit">Нэвтрэх</button></a></li>
+            </ul>
+
+        </nav>
+        <div class="clearfix"></div>
     </header>
     <!-- ------------------header end ----------------------- -->
 
+
     <main>
-        <!-- ------------------home page begin ----------------------- -->
-
-        <section id="home-page">
-            <section id="home">
-                <div>
-                    <h1>Намайг таа</h1>
-                    <h4>
-                        Өөрийгөө сорьж цагийг үр бүтээлтэй өнгөрүүлээрэй
-                    </h4>
-                    <button><a href="#play">Тоглох</a></button>
-                </div>
-                <div>
-                    <img src="./photos/thinkwoman.jpg" alt="read book girl">
-                </div>
-            </section>
-            <section id="desc-page">
-                <header>
-                    <h1>Шалгалтандаа бэлдэж, цагийг хөгжилтэй өнгөрүүлмээр байна уу.</h1>
-                </header>
-                <div class="container">
-                    <div class="card">
-                        <img src="./photos/task.jpg" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
-                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./photos/studygirlcartoon.png" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
-                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <img src="./photos/task2.png" alt="Avatar">
-                        <div class="container">
-                            <h4><b>Шалгалтанд бэлдэхэд уйтгартай байна уу.</b></h4>
-                            <p>Хөгжилтэйгөөр өөрийгөө сориорой.</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-        </section>
-
-        <!-- ------------------home page end ----------------------- -->
-
         <!-- ------------------play game begin ----------------------- -->
-        <section id="play">
-            <div class="container">
-                <div class="box"><a href="questionType.html">Алгоритм</a></div>
-                <div class="box"><a href="questionType.html">Си хэл</a></div>
-                <div class="box"><a href="questionType.html">Өгөгдлийн сангийн програмчлал</a></div>
-                <div class="box"><a href="questionType.html">Компьютер тооцоолол</a></div>
-                <div class="box"><a href="questionType.html">Сүлжээ</a></div>
-                <div class="box"><a href="questionType.html">Интернет</a></div>
+        <section id="home-page" data-aos="fade-up" data-aos-duration="1000">
+            <div class="landing">
+                <article class="landing-text">
+                    <h1><span>Намайг таа</span></h1>
+                    <p>
+                        Өөрийгөө сорьж цагийг үр бүтээлтэй өнгөрүүлээрэй
+                    </p>
+                    <button><a href="#play">Тоглох</a></button>
+                </article>
+                <article class="landingImage" data-aos="fade-down" data-aos-duration="2000">
+                    <img src="./photos/background3.png" alt="read book girl">
+                </article>
+            </div>
             </div>
         </section>
+        <section id="play" data-aos="fade-up" data-aos-duration="1000">
+            <ul class="container" data-aos="fade-up" data-aos-duration="1000">
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistion1">
+                        <img src="./photos/science.jpg" alt="">
+                        <h2>Шинжлэх ухаан</h2>
+                    </a>
+                </li>
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistion2">
+                        <img src="./photos/computer1.jpg" alt="">
+                        <h2>Компьютер</h2>
+                    </a>
+                </li>
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistion3">
+                        <img src="photos/sport.jpg" alt="">
+                        <h2>Спорт</h2>
+                    </a>
+                </li>
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistion4">
+                        <img src="./photos/music1.jpg" alt="">
+                        <h2>Дуу хөгжим</h2>
+                    </a>
+                </li>
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistion5">
+                        <img src="./photos/movies.jpg" alt="">
+                        <h2>Кино</h2>
+                    </a>
+                </li>
+                <li class="box">
+                    <a href="questionType.html" aria-label="quistio6">
+                        <img src="./photos/history.jpg" alt="">
+                        <h2>Түүх</h2>
+                    </a>
+                </li>
 
-
+            </ul>
+        </section>
         <!-- ------------------play game end ----------------------- -->
 
         <!-- ------------------about begin ----------------------- -->
         <section id="about">
-            <article>
-                <div>
-                    <h3>Оюутан бүрийг зогсоох боломжгүй болгох</h3>
-                    <p>Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй. Оюутнууд урьд өмнөхөөс илүү их дарамтанд өртөж байгааг бид мэднэ. Энэ нь тэднийг ядарч туйлдуулж,
-                        сэтгэлийн түгшүүр төрүүлж, шатаахад амархан болгодог.
-                    </p>
+            <header class="aboutHeader" data-aos="fade-up" data-aos-duration="1000">
+                <h1>Товч танилцуулга </h1>
+                <button> Дэлгэрэнгүй</button>
+            </header>
+            <section class="cards" data-aos="fade-up" data-aos-duration="1000">
+                <article class="card one" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./photos/goal4.png" alt="goal" class="cardoneImg">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Эрхэм зорилго</h2>
+                        <p>Бид үйлчлүүлэгч, хамтын ажиллагаатай байгууллагууд болон ажилчдынхаа сэтгэл ханамжийг хамгийн өндөр...</p>
+                        <a href="about.html" aria-label="about1">
+                            <div class="cardBtn">
+                                <img src="./photos/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article class="card two" data-aos="fade-up" data-aos-duration="1300">
+                    <img src="./photos/vision3.png" alt="goal" class="cardtwoImg">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Алсын хараа</h2>
+                        <p>Бид үйлчлүүлэгч, хамтын ажиллагаатай байгууллагууд болон ажилчдынхаа сэтгэл ханамжийг хамгийн өндөр...</p>
+                        <a href="about.html" aria-label="about2">
+                            <div class="cardBtn">
+                                <img src="./photos/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </article>
+                <article class="card three" data-aos="fade-up" data-aos-duration="1600">
+                    <img src="./photos/diamond.png" alt="goal" class="cardthreeImg">
+                    <div class="cardbgone"></div>
+                    <div class="cardContent">
+                        <h2>Үнэт зүйл</h2>
+                        <p>Бид үйлчлүүлэгч, хамтын ажиллагаатай байгууллагууд болон ажилчдынхаа сэтгэл ханамжийг хамгийн өндөр...</p>
+                        <a href="about.html" aria-label="about3">
+                            <div class="cardBtn">
+                                <img src="./photos/next.png" alt="" class="cardIcon">
+                            </div>
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+
+
+        <!-- ------------------about end ----------------------- -->
+
+        <section id="banner">
+            <article class="banner">
+                <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Цагийг үр бүтээлтэй өнгөрөө<br> <span style="font-size:1.6vw;font-weight:normal" class="bannerInnerText">
+                        Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй.  
+                    </span> </h1>
                 </div>
-                <div>
-                    <img src="/Quiz/photos/edu3.jpg" alt="learn">
+                <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./photos/background1.png" alt="">
                 </div>
             </article>
-            <article>
-                <div>
-                    <h3>Чөлөөтэй сэтгэ</h3>
-                    <p>Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй. Оюутнууд урьд өмнөхөөс илүү их дарамтанд өртөж байгааг бид мэднэ. Энэ нь тэднийг ядарч туйлдуулж,
-                        сэтгэлийн түгшүүр төрүүлж, шатаахад амархан болгодог.
-                    </p>
+            <article class="banner">
+                <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./photos/backgound2.png" alt="">
                 </div>
-                <div>
-                    <img src="/Quiz/photos/edu4.jpg" alt="color pencil">
+                <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Чөлөөтэй сэтгэ <br> <span style="font-size:1.6vw;font-weight:normal" class="bannerInnerText">
+                        Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй. 
+                    </span> </h1>
                 </div>
             </article>
-            <article>
-                <div>
-                    <h3>Зогсолтгүйгээр урагшил</h3>
-                    <p>Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй. Оюутнууд урьд өмнөхөөс илүү их дарамтанд өртөж байгааг бид мэднэ. Энэ нь тэднийг ядарч туйлдуулж,
-                        сэтгэлийн түгшүүр төрүүлж, шатаахад амархан болгодог.
-                    </p>
+            <article class="banner">
+                <div class="bannerText" data-aos="fade-right" data-aos-duration="1000">
+                    <h1>Зогсолтгүйгээр урагшил <br> <span style="font-size:1.6vw;font-weight:normal" class="bannerInnerText">
+                        Quizlet дээр бид хэн ч юу ч сурч чадна гэдэгт итгэдэг. Үүний тулд тууштай сэтгэл, зөв ​​удирдамж, түүнийг олж харах хэрэгсэл л хэрэгтэй. 
+                    </span> </h1>
                 </div>
-                <div>
-                    <img src="/Quiz/photos/edu2.jpg" alt="light">
+                <div class="bannerImg" data-aos="fade-up" data-aos-duration="1000">
+                    <img src="./photos/studywonam.svg" alt="">
                 </div>
             </article>
         </section>
 
-        <!-- ------------------about end ----------------------- -->
+        <section id="contact">
+            <div class="contact-info">
+                <div class="card" data-aos-duration="1000">
+                    <i class="card-icon far fa-envelope"></i>
+                    <p>bla@yahoo.com</p>
+                </div>
+                <div class="card" data-aos-duration="1000">
+                    <i class="card-icon fas fa-phone"></i>
+                    <p>(976) 99999999</p>
+                </div>
+                <div class="card" data-aos-duration="1000">
+                    <i class="card-icon fas fa-map-marker-alt"></i>
+                    <p>Замын цагдаагийн газрын чанх хойно, Union Building 8 давхар 809 тоот</p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <!-- ------------------footer begin ----------------------- -->
-    <footer id="contact">
-        <section>
-            <div id="box">
-                <div class="icon-phone"><i class="material-icons">email</i></div>
-                <p>mail</p>
+    <footer>
+        <div class="row">
+            <div class="col-12">
+                <ul class="sci">
+                    <li><a href="#" aria-label="facebook"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" aria-label="weixin"><i class="fab fa-weixin"></i></a></li>
+                    <li><a href="#" aria-label="google"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" aria-label="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
             </div>
-            <div id="box">
-                <div class="icon-facebook"><i class="material-icons">local_phone</i></div>
-                <p>phone</p>
-            </div>
-            <div id="box">
-                <div class="icon-location"><i class="material-icons">location_on</i></div>
-                <p>location</p>
-            </div>
-        </section>
-        <section>
-            <div id="send-mail">
-                <h3>Санал хүсэлт</h3>
-                <form>
-                    <div>
-                        <input type="text" name="name" id="name" placeholder="Нэр" required>
-                        <input type="email" name="email" id="email" placeholder="И-мэйл" required>
-                    </div>
-                    <div>
-                        <textarea rows="4" cols="40" name="comment" placeholder="Дэлгэрэнгүй текст"></textarea>
-                    </div>
-                    <div><button type="submit">Илгээх</button></div>
-                </form>
-            </div>
-
-        </section>
+        </div>
     </footer>
 
+
     <!-- ------------------footer end ----------------------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

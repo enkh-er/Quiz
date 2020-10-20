@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+html,
+body {
+    overflow-x: hidden !important;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    background: rgb(240, 240, 240);
+}
+
+.quistion-type .nav {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav ul {
+    display: flex;
+    margin-top: 20vh;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.nav ul li {
+    list-style: none;
+    width: 15%;
+    box-sizing: border-box;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    background: #fff;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.nav ul li:hover {
+    border: solid #ff512f;
+    border-width: 0px 0px 4px 0px;
+}
+
+.nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 1em;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(77, 76, 76);
+}
+
+.quision-sub-type {
+    height: 70vh;
+}
+
+.quision-sub-type ul {
+    position: absolute;
+    width: 350px;
+    margin: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: block;
+    justify-content: center;
+    position: relative;
+}
+
+.quision-sub-type ul li {
+    list-style: none;
+    background: #fff;
+    padding: 10px 20px;
+    margin: 5px 0px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.10);
+    transition: .5s;
+}
+
+.quision-sub-type ul li:hover {
+    transform: scale(1.06);
+    background: rgb(240, 240, 240);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0);
+}
+
+.quision-sub-type ul li a {
+    color: #000000;
+    text-decoration: none;
+}
+
+@media screen and (max-width:760px) {
+    .quistion-type .nav ul li {
+        width: 30%;
+    }
+}
